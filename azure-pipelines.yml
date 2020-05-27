@@ -32,3 +32,11 @@ steps:
     PathtoPublish: '$(build.artifactstangingdirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'ssh-for-ec2'
+    sourceFolder: 'target'
+    contents: '**'
+    targetFolder: 'var/www/html'
+    readyTimeout: '20000'
