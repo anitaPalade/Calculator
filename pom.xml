@@ -22,7 +22,7 @@
         <configuration>
          <archive>
           <manifest>
-           <mainClass>com.houarizegai.calculator.Calculator</mainClass>
+           <mainClass>src.com.houarizegai.calculator.Calculator</mainClass>
            </manifest>
          </archive>
         </configuration>
