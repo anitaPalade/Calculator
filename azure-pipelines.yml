@@ -40,10 +40,3 @@ steps:
     contents: '**'
     targetFolder: 'var/www/html'
     readyTimeout: '20000'
-
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'ssh-for-ec2'
-    runOptions: 'commands'
-    commands: 'echo "hello world"'
-    readyTimeout: '20000'
